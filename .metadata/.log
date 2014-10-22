@@ -1529,3 +1529,1937 @@ java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 62281 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1842984530\testng-customsuite.xml
 java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 62281 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1842984530\testng-customsuite.xml
+
+!ENTRY org.eclipse.ui 4 0 2014-10-14 14:38:09.199
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.core.runtime.AssertionFailedException: assertion failed: )
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:341)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:218)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.handleEvent(IDEWorkbenchAdvisor.java:171)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4346)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3305)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.VtblCall(Native Method)
+	at org.eclipse.swt.internal.ole.win32.IOleInPlaceObject.InPlaceDeactivate(IOleInPlaceObject.java:21)
+	at org.eclipse.swt.ole.win32.OleClientSite.deactivateInPlaceClient(OleClientSite.java:559)
+	at org.eclipse.swt.ole.win32.OleClientSite.onDispose(OleClientSite.java:908)
+	at org.eclipse.swt.ole.win32.OleClientSite.access$1(OleClientSite.java:895)
+	at org.eclipse.swt.ole.win32.OleClientSite$1.handleEvent(OleClientSite.java:129)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:816)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:165)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:789)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1290)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:454)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:447)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:715)
+	at org.eclipse.jface.text.AbstractInformationControl.dispose(AbstractInformationControl.java:513)
+	at org.eclipse.jface.text.AbstractInformationControlManager.disposeInformationControl(AbstractInformationControlManager.java:1308)
+	at org.eclipse.jface.text.AbstractInformationControlManager.dispose(AbstractInformationControlManager.java:1323)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.dispose(AbstractHoverInformationControlManager.java:933)
+	at org.eclipse.jface.text.TextViewerHoverManager.dispose(TextViewerHoverManager.java:392)
+	at org.eclipse.jface.text.TextViewer.handleDispose(TextViewer.java:1952)
+	at org.eclipse.jface.text.source.SourceViewer.handleDispose(SourceViewer.java:775)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleDispose(ProjectionViewer.java:1330)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.handleDispose(JavaSourceViewer.java:502)
+	at org.eclipse.jface.text.TextViewer$2.widgetDisposed(TextViewer.java:1806)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.swt.custom.StyledText.handleDispose(StyledText.java:5852)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:816)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:165)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:454)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:266)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:933)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:933)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:564)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.jface.text.Position.<init>(Position.java:62)
+	at org.eclipse.jface.text.source.AnnotationModel$RegionIterator.<init>(AnnotationModel.java:79)
+	at org.eclipse.jface.text.source.AnnotationModel.getRegionAnnotationIterator(AnnotationModel.java:732)
+	at org.eclipse.jface.text.source.AnnotationModel.getAnnotationIterator(AnnotationModel.java:700)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.doPaint1(AnnotationRulerColumn.java:727)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.doubleBufferPaint(AnnotationRulerColumn.java:541)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.redraw(AnnotationRulerColumn.java:824)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn$6.run(AnnotationRulerColumn.java:807)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 221 more
+!SESSION 2014-10-21 21:21:26.699 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-21 21:21:40.892
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-10-21 21:21:44.738
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-21 21:23:15.709
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-21 21:23:15.805
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Korlova'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:26:45.536
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  AlsoGroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void returnToHomePage()
+      void submitContactCreation()
+      void fillContactForm(ContactData)
+      void initContactCreation()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  GroupCreationTests.java (not open)
+  ContactCreationTests.java (not open)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:26:46.993
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57478 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-562584100\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 57478 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-562584100\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:54:24.935
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  AlsoGroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void returnToHomePage()
+      void submitContactCreation()
+      void fillContactForm(ContactData)
+      void initContactCreation()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:54:27.040
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58482 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--960895138\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 58482 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--960895138\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:55:23.266
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void returnToHomePage()
+      void submitContactCreation()
+      void fillContactForm(ContactData)
+      void initContactCreation()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:55:23.445
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58760 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1775531153\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 58760 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1775531153\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:56:20.162
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void returnToHomePage()
+      void submitContactCreation()
+      void fillContactForm(ContactData)
+      void initContactCreation()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 21:56:20.257
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58983 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1036506613\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 58983 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1036506613\testng-customsuite.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2014-10-21 21:58:09.268
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl AlsoGroupCreationTests.java
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3320)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.ui.texteditor.StatusTextEditor.setFocus(StatusTextEditor.java:120)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.setFocus(JavaEditor.java:2389)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:191)
+	at sun.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:253)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:225)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:795)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.setFocus(ContributedPartRenderer.java:100)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2555)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1052)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3818)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2724)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3703)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3640)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2034)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:290)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_SIZE(Control.java:5257)
+	at org.eclipse.swt.widgets.Scrollable.WM_SIZE(Scrollable.java:316)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1690)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4685)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:79)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5492)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4698)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1465)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3143)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1020)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3104)
+	at org.eclipse.swt.widgets.Control.setSize(Control.java:3641)
+	at org.eclipse.swt.widgets.Control.setSize(Control.java:3665)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2129)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.adjustTopRight(StackRenderer.java:789)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1264)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:68)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$10.widgetSelected(StackRenderer.java:1034)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3110)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1794)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:43.998
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.043
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.045
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.047
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.050
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.GroupData
+    import com.example.tests.TestBase
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      ApplicationManager()
+      void stop()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      void fillGroupForm(TestBase, GroupData)
+      void returnToHomePage()
+      void submitContactCreation()
+      String closeAlertAndGetItsText()
+      void fillContactForm(TestBase, ContactData)
+      void initContactCreation()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    class NavigationHelper
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.053
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 22:51:44.452
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59863 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--278950245\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 59863 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--278950245\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.211
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.233
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.236
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.238
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.240
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      NavigationHelper navigationHelper
+      GroupHelper groupHelper
+      ContactHelper contactHelper
+      ApplicationManager()
+      void stop()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] ContactHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.TestBase
+    class ContactHelper
+      void initContactCreation()
+      void fillContactForm(ApplicationManager, TestBase, ContactData)
+      void submitContactCreation()
+      void returnToHomePage()
+  [Working copy] GroupHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import com.example.tests.GroupData
+    import com.example.tests.TestBase
+    class GroupHelper
+      void initGroupCreation()
+      void fillGroupForm(ApplicationManager, TestBase, GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    class NavigationHelper
+      void openMainPage()
+      void gotoGroupsPage()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.242
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:00:30.480
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60187 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--16403710\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60187 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--16403710\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:21:45.981
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:21:50.793
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60449 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1647292097\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60449 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1647292097\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:27:45.833
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:27:49.445
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60552 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-221319083\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60552 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-221319083\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:28:45.436
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:28:49.857
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60574 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1500908939\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60574 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1500908939\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:32:34.014
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:32:34.323
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60623 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--781309715\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60623 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--781309715\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.728
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.738
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.741
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.744
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.754
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] HelperBase.java
+    package com.example.fw
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    class HelperBase
+      ApplicationManager manager
+      WebDriver driver
+      boolean acceptNextAlert
+      HelperBase(ApplicationManager)
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      NavigationHelper navigationHelper
+      GroupHelper groupHelper
+      ContactHelper contactHelper
+      ApplicationManager()
+      void stop()
+      NavigationHelper getNavigationHelper()
+      ContactHelper getContactHelper()
+      GroupHelper getGroupHelper()
+  [Working copy] ContactHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.TestBase
+    class ContactHelper
+      ContactHelper(ApplicationManager)
+      void initContactCreation()
+      void fillContactForm(ApplicationManager, TestBase, ContactData)
+      void submitContactCreation()
+      void returnToHomePage()
+  [Working copy] GroupHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import com.example.tests.GroupData
+    class GroupHelper
+      GroupHelper(ApplicationManager)
+      void initGroupCreation()
+      void fillGroupForm(GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    class NavigationHelper
+      NavigationHelper(ApplicationManager)
+      void openMainPage()
+      void gotoGroupsPage()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:42.757
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:40:43.625
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60781 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--714659499\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60781 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--714659499\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.646
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.649
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.651
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.652
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.655
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] HelperBase.java
+    package com.example.fw
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    class HelperBase
+      ApplicationManager manager
+      WebDriver driver
+      boolean acceptNextAlert
+      HelperBase(ApplicationManager)
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      NavigationHelper navigationHelper
+      GroupHelper groupHelper
+      ContactHelper contactHelper
+      ApplicationManager()
+      void stop()
+      NavigationHelper getNavigationHelper()
+      ContactHelper getContactHelper()
+      GroupHelper getGroupHelper()
+  [Working copy] ContactHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.TestBase
+    class ContactHelper
+      ContactHelper(ApplicationManager)
+      void initContactCreation()
+      void fillContactForm(ApplicationManager, TestBase, ContactData)
+      void submitContactCreation()
+      void returnToHomePage()
+  [Working copy] GroupHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import com.example.tests.GroupData
+    class GroupHelper
+      GroupHelper(ApplicationManager)
+      void initGroupCreation()
+      void fillGroupForm(GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    class NavigationHelper
+      NavigationHelper(ApplicationManager)
+      void openMainPage()
+      void gotoGroupsPage()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.658
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-21 23:43:41.948
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60824 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--973166432\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 60824 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--973166432\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-10-21 23:48:06.123
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Invalid stack frame
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1086)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingThisObject(JDIStackFrame.java:762)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getThis(JDIStackFrame.java:1154)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:362)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.debug 4 130 2014-10-21 23:48:06.162
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-10-22 22:14:27.548
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 426.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-10-22 22:14:31.379
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 427.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-10-22 22:14:34.420
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 428.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.437
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.440
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.442
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.444
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.447
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] HelperBase.java
+    package com.example.fw
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    class HelperBase
+      ApplicationManager manager
+      WebDriver driver
+      boolean acceptNextAlert
+      HelperBase(ApplicationManager)
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void type(By, String)
+      void click(By)
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      NavigationHelper navigationHelper
+      GroupHelper groupHelper
+      ContactHelper contactHelper
+      ApplicationManager()
+      void stop()
+      NavigationHelper getNavigationHelper()
+      ContactHelper getContactHelper()
+      GroupHelper getGroupHelper()
+  [Working copy] ContactHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.TestBase
+    class ContactHelper
+      ContactHelper(ApplicationManager)
+      void initContactCreation()
+      void fillContactForm(ApplicationManager, TestBase, ContactData)
+      void submitContactCreation()
+      void returnToHomePage()
+  [Working copy] GroupHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import com.example.tests.GroupData
+    class GroupHelper
+      GroupHelper(ApplicationManager)
+      void initGroupCreation()
+      void fillGroupForm(GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    class NavigationHelper
+      NavigationHelper(ApplicationManager)
+      void openMainPage()
+      void gotoGroupsPage()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:06.449
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:19:10.699
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64723 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--302568154\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 64723 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--302568154\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.ui 2 0 2014-10-22 22:20:57.991
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2014-10-22 22:24:39.382
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Invalid stack frame
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1086)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingThisObject(JDIStackFrame.java:762)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getThis(JDIStackFrame.java:1154)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:362)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.debug 4 130 2014-10-22 22:24:39.382
+!MESSAGE Invalid stack frame
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.084
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in addressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.fw (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.088
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.090
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.092
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in addressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.094
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.fw [in src [in addressbook-selenium-tests]]
+  [Working copy] HelperBase.java
+    package com.example.fw
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    class HelperBase
+      ApplicationManager manager
+      WebDriver driver
+      boolean acceptNextAlert
+      HelperBase(ApplicationManager)
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void type(By, String)
+      void click(By)
+  [Working copy] ApplicationManager.java
+    package com.example.fw
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class ApplicationManager
+      WebDriver driver
+      String baseUrl
+      NavigationHelper navigationHelper
+      GroupHelper groupHelper
+      ContactHelper contactHelper
+      ApplicationManager()
+      void stop()
+      NavigationHelper getNavigationHelper()
+      ContactHelper getContactHelper()
+      GroupHelper getGroupHelper()
+  [Working copy] ContactHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import org.openqa.selenium.support.ui.Select
+    import com.example.tests.ContactData
+    import com.example.tests.TestBase
+    class ContactHelper
+      ContactHelper(ApplicationManager)
+      void initContactCreation()
+      void fillContactForm(ApplicationManager, TestBase, ContactData)
+      void submitContactCreation()
+      void returnToHomePage()
+  [Working copy] GroupHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    import com.example.tests.GroupData
+    class GroupHelper
+      GroupHelper(ApplicationManager)
+      void initGroupCreation()
+      void fillGroupForm(GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+  [Working copy] NavigationHelper.java
+    package com.example.fw
+    import org.openqa.selenium.By
+    class NavigationHelper
+      NavigationHelper(ApplicationManager)
+      void openMainPage()
+      void gotoGroupsPage()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.096
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import com.example.fw.ApplicationManager
+    class TestBase
+      ApplicationManager app
+      void setUp()
+      void tearDown()
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String home
+      String mobile
+      String work
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String group
+      String address2
+      String phone2
+      ContactData()
+      ContactData(String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:25:15.381
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64871 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1412795685\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 64871 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1412795685\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:52:14.815
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:52:15.137
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65428 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1862658190\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 65428 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1862658190\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:52:41.472
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:52:41.632
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65463 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1338265480\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 65463 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1338265480\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:53:16.815
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 22:53:17.041
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65480 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--554668460\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 65480 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--554668460\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:02:25.144
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:02:25.459
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49376 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-604392797\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49376 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-604392797\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:03:18.022
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:03:18.159
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49408 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1351593991\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49408 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1351593991\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:05:04.021
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:05:04.134
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49447 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1395285155\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49447 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1395285155\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:07:20.596
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:07:20.650
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49494 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-654611536\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49494 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-654611536\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:09:55.696
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49544 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1530546864\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49544 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1530546864\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:10:14.077
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49569 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--624264804\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49569 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--624264804\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:10:26.397
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49593 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-74854596\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49593 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-74854596\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:10:53.039
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49620 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--24379972\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49620 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--24379972\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:14:08.998
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:14:09.119
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49687 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1473620165\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49687 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1473620165\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:14:21.047
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:14:21.149
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49713 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1431115540\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49713 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1431115540\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:22:23.963
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:22:24.049
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49823 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1491013775\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49823 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1491013775\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:25:56.519
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:25:56.650
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49919 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1445326058\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49919 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse--1445326058\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:26:24.342
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:26:24.456
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49947 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1318572122\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 49947 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-1318572122\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:26:56.229
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupModificationTests
+    void modifySomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-10-22 23:26:56.306
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50003 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-2043869771\testng-customsuite.xml
+java -ea -classpath /C:/Users/Korlova/Downloads/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\bin:C:\Users\Korlova\Downloads\selenium-server-standalone-2.43.1.jar org.testng.remote.RemoteTestNG -serport 50003 -d C:\JavaForTesters\Programming-For-Testers-Java\addressbook-selenium-tests\test-output C:\Users\Korlova\AppData\Local\Temp\testng-eclipse-2043869771\testng-customsuite.xml
