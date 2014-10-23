@@ -40,3 +40,4 @@
 1414002829397	Inline local variable 'locator'
 1414002841488	Inline local variable 'text'
 1414004426103	Extract method 'selectGroupByIndex'
+1414081850688	Extract method 'selectContactByRowColumn'

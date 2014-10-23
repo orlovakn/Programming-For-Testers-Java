@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="GroupCreationTests (1)" project="addressbook-selenium-tests" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.example.tests.GroupCreationTests" time="56.835">
-    <testcase name="testUntitled" classname="com.example.tests.GroupCreationTests" time="56.835"/>
-  </testsuite>
-</testrun>

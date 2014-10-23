@@ -37,6 +37,7 @@ public abstract class HelperBase {
 	  }
 
 	public String closeAlertAndGetItsText() {
+		
 	    try {
 	      Alert alert = driver.switchTo().alert();
 	      String alertText = alert.getText();
@@ -63,7 +64,9 @@ public abstract class HelperBase {
 	}
 
 	protected void selectByText(By locator, String text) {
+		if (text != null) {
 		new Select(driver.findElement(locator))
 		   .selectByVisibleText(text);
+	}
 	}
 }

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="GroupCreationTests (1)" project="addressbook-selenium-tests" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.example.tests.GroupCreationTests" time="33.563">
-    <testcase name="testEmptyGroupCreation" classname="com.example.tests.GroupCreationTests" time="22.647"/>
-    <testcase name="testNonEmptyGroupCreation" classname="com.example.tests.GroupCreationTests" time="10.916"/>
-  </testsuite>
-</testrun>

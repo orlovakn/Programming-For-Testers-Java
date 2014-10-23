@@ -39,4 +39,21 @@ public class ContactHelper extends HelperBase {
 	  click(By.linkText("home"));
 	}
 
+	public void deleteContact(int row, int column) {
+		 selectContactByRowColumn(row, column);
+		 click(By.xpath("//input[@name='update'][@value='Delete']"));
+	}
+
+	private void selectContactByRowColumn(int row, int column) {
+		click(By.xpath("//table[@id='maintable']/tbody/tr[" + row + "]/td[" + column + "]/a/img[@alt='Edit']"));
+	}
+
+	public void initContactModification(int row, int column) {
+	   selectContactByRowColumn(row, column);	
+	}
+
+	public void submitContactModification() {
+	  click(By.xpath("//input[@name='update'][@value='Update']"));
+	}
+
 }

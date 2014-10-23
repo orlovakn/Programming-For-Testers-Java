@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.fw.ContactHelper"/>
+<fullyQualifiedTypeName name="com.example.fw.ApplicationManager"/>
+<fullyQualifiedTypeName name="com.example.fw.NavigationHelper"/>
+<fullyQualifiedTypeName name="com.example.fw.GroupHelper"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+</qualifiedTypeNameHistroy>
