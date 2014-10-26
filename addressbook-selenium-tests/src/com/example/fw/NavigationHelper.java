@@ -9,11 +9,10 @@ public class NavigationHelper extends HelperBase {
 	}
 
 	public void openMainPage() {
-	    driver.get(manager.baseUrl + "/addressbookv4.1.4/");
+	    driver.get(manager.baseUrl + "addressbookv4.1.4/");
 	}
 
 	public void gotoGroupsPage() {
 	  click(By.linkText("groups"));
 	}
-
 }
