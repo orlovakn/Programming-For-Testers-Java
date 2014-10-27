@@ -19,13 +19,15 @@ public class ContactModificationTests extends TestBase {
 		//actions
 		app.getContactHelper().initContactModification(2, 7);
 		ContactData contact = new ContactData();
-		contact.firstname = "new name";
-		contact.lastname = "new lastname";
-		contact.address = "new address";
+		contact.firstname = "newname";
+		contact.lastname = "newlastname";
+		contact.address = "newaddress";
 		contact.mobile = "123456";
 		contact.bday = "3";
 		contact.bmonth = "October";
 		contact.byear = "1984";
+		contact.email = "1abc@test.com";
+		contact.email2 = "2abc@test.com";
 		app.getContactHelper().fillContactForm(contact);
 		app.getContactHelper().submitContactModification();
 	    app.getContactHelper().returnToHomePage();

@@ -17,13 +17,13 @@ public class ContactCreationTests extends TestBase{
 	// actions
 	app.getContactHelper().initContactCreation();
     ContactData contact = new ContactData();
-    contact.firstname = "ContactFirstName";
-    contact.lastname = "ContactLastName";
+    contact.firstname = "Anton";
+    contact.lastname = "Antonov";
     contact.address = "Lenina Street";
     contact.home = "Saint Petersburg";
     contact.mobile = "+7123456789";
     contact.work = "Google";
-    contact.email = "contact@testemail1";
+    contact.email = "aaemail@testemail1";
     contact.email2 = "contact@testemail2";
     contact.bday = "3";
     contact.bmonth = "February";

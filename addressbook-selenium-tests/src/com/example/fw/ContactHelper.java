@@ -3,7 +3,6 @@ package com.example.fw;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -65,45 +64,23 @@ public class ContactHelper extends HelperBase {
 
 	public List<ContactData> getContacts() {
     	List<ContactData> contacts = new ArrayList<ContactData>(); 
-    	List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
-    	for (WebElement checkbox : checkboxes) {
-			ContactData contact = new ContactData();
-			
-			String title = checkbox.getAttribute("title");
-			String fullname = title.substring("Select (".length(), title.length()- ")".length());
-			int spaceindex = fullname.indexOf(" ");
-			if (spaceindex > 0) {
-			 contact.firstname = fullname.substring(0, spaceindex);	
-			} 
-			else {
-			contact.firstname = "";	
-			}
-			//System.out.println(contact.firstname);
-			if ((fullname.length() - spaceindex)>0) { 
-			contact.lastname = fullname.substring(spaceindex + 1);
-			}
-			else {
-			contact.lastname = "";
-			}
-			
-			String accept = checkbox.getAttribute("accept");
-			int semicolonindex = accept.indexOf(";");
-			
-			if (semicolonindex>0) {
-			contact.email = accept.substring(0, semicolonindex);
-			}
-			else {
-			contact.email = "";
-			}
-			if ((accept.length() - semicolonindex) > 0) {
-				contact.email2 = accept.substring(semicolonindex+1);
-			}
-			else {
-			contact.email2 = "";	
-			}
-			contacts.add(contact);
-		}
+    	
+    	//Finding how many rows are in the table
+    	WebElement ResultNumber = driver.findElement(By.xpath("//div[@id='content']/label/strong/span[@id='search_count']"));
+    	String RowNumber = ResultNumber.getText();
+    	Integer Rows = Integer.valueOf(RowNumber);
+    	
+    	//Filling contact data: firstname and lastname from table
+    	for (int i = 2; i < Rows + 2; i++)
+    	{
+    		ContactData contact = new ContactData();
+    		WebElement lastname = driver.findElement(By.xpath("//table[@id='maintable']/tbody/tr[" + i + "]/td[2]"));
+    		WebElement firstname = driver.findElement(By.xpath("//table[@id='maintable']/tbody/tr[" + i + "]/td[3]"));
+    		contact.firstname = firstname.getText();
+    	//	System.out.println(contact.firstname);
+    		contact.lastname = lastname.getText();
+    		contacts.add(contact);
+        }    		
     	return contacts;
 	}
-
 }

@@ -42,16 +42,14 @@ public class ContactData implements Comparable<ContactData> {
 	@Override
 	public String toString() {
 		return "ContactData [firstname=" + firstname + ", lastname=" + lastname
-				+ ", email=" + email + ", email2=" + email2 + "]";
+				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-	/*result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((email2 == null) ? 0 : email2.hashCode());
-		result = prime * result
+	/*	result = prime * result
 				+ ((firstname == null) ? 0 : firstname.hashCode());
 		result = prime * result
 				+ ((lastname == null) ? 0 : lastname.hashCode()); */
@@ -67,16 +65,6 @@ public class ContactData implements Comparable<ContactData> {
 		if (getClass() != obj.getClass())
 			return false;
 		ContactData other = (ContactData) obj;
-		if (email == null) {
-			if (other.email != null)
-				return false;
-		} else if (!email.equals(other.email))
-			return false;
-		if (email2 == null) {
-			if (other.email2 != null)
-				return false;
-		} else if (!email2.equals(other.email2))
-			return false;
 		if (firstname == null) {
 			if (other.firstname != null)
 				return false;
@@ -92,6 +80,11 @@ public class ContactData implements Comparable<ContactData> {
 
 	@Override
 	public int compareTo(ContactData other) {
-		return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase());
+		if (!this.lastname.toLowerCase().equals(other.lastname.toLowerCase())) {
+			return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase());
+		}
+		else {
+			return this.firstname.toLowerCase().compareTo(other.firstname.toLowerCase());
+		}
 	}
 }
