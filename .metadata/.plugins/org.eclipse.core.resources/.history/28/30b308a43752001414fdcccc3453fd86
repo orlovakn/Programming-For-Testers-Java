@@ -1,9 +1,0 @@
-package com.example.tests;
-
-public class Snippet {
-	public static void main(String[] args) {
-		com.example.tests
-		/addressbook-selenium-tests/src/com/example/tests/GroupCreationTests.java
-	}
-}
-
