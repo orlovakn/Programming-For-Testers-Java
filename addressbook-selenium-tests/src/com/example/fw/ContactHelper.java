@@ -1,7 +1,14 @@
 package com.example.fw;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import com.example.tests.ContactData;
+import com.example.tests.GroupData;
 import com.example.tests.TestBase;
 
 public class ContactHelper extends HelperBase {
@@ -54,6 +61,49 @@ public class ContactHelper extends HelperBase {
 
 	public void submitContactModification() {
 	  click(By.xpath("//input[@name='update'][@value='Update']"));
+	}
+
+	public List<ContactData> getContacts() {
+    	List<ContactData> contacts = new ArrayList<ContactData>(); 
+    	List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
+    	for (WebElement checkbox : checkboxes) {
+			ContactData contact = new ContactData();
+			
+			String title = checkbox.getAttribute("title");
+			String fullname = title.substring("Select (".length(), title.length()- ")".length());
+			int spaceindex = fullname.indexOf(" ");
+			if (spaceindex > 0) {
+			 contact.firstname = fullname.substring(0, spaceindex);	
+			} 
+			else {
+			contact.firstname = "";	
+			}
+			//System.out.println(contact.firstname);
+			if ((fullname.length() - spaceindex)>0) { 
+			contact.lastname = fullname.substring(spaceindex + 1);
+			}
+			else {
+			contact.lastname = "";
+			}
+			
+			String accept = checkbox.getAttribute("accept");
+			int semicolonindex = accept.indexOf(";");
+			
+			if (semicolonindex>0) {
+			contact.email = accept.substring(0, semicolonindex);
+			}
+			else {
+			contact.email = "";
+			}
+			if ((accept.length() - semicolonindex) > 0) {
+				contact.email2 = accept.substring(semicolonindex+1);
+			}
+			else {
+			contact.email2 = "";	
+			}
+			contacts.add(contact);
+		}
+    	return contacts;
 	}
 
 }
