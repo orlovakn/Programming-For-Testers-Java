@@ -61,16 +61,30 @@ public class ContactHelper extends HelperBase {
 	public void submitContactModification() {
 	  click(By.xpath("//input[@name='update'][@value='Update']"));
 	}
-
+	
+	// new getContacts method
 	public List<ContactData> getContacts() {
+		
+	List<ContactData> contacts = new ArrayList<ContactData>(); 
+	List<WebElement> rows = driver.findElements(By.name("entry"));
+
+	for (WebElement row : rows) {
+		ContactData contact = new ContactData();
+		contact.lastname = row.findElement(By.xpath(".//td[2]")).getText();
+		contact.firstname = row.findElement(By.xpath(".//td[3]")).getText();
+	    contacts.add(contact);
+	}
+	return contacts;
+	}
+	
+	/* Old get Contacts() method
+	    public List<ContactData> getContacts() {
     	List<ContactData> contacts = new ArrayList<ContactData>(); 
     	
     	//Finding how many rows are in the table
     	WebElement ResultNumber = driver.findElement(By.xpath("//div[@id='content']/label/strong/span[@id='search_count']"));
-    	String RowNumber = ResultNumber.getText();
-    	Integer Rows = Integer.valueOf(RowNumber);
+    	Integer Rows = Integer.valueOf(ResultNumber.getText());
     	
-    	//Filling contact data: firstname and lastname from table
     	for (int i = 2; i < Rows + 2; i++)
     	{
     		ContactData contact = new ContactData();
@@ -82,5 +96,5 @@ public class ContactHelper extends HelperBase {
     		contacts.add(contact);
         }    		
     	return contacts;
-	}
+	}*/
 }
