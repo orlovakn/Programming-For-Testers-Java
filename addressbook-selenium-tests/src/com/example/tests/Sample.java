@@ -7,9 +7,9 @@ public class Sample {
 	  String b = "       +7 (916) 123-45-67    ";	  
 	  b = b.trim();
 	  System.out.println(b);
-	//  String[] list = b.split("\\s+"); 
-	  b = b.replaceAll("[ ()\\-]", "");
-	  System.out.println(b);
+	  String[] list = b.split("\\s+"); 
+//	  b = b.replaceAll("[ ()\\-]", "");
+	  System.out.println(list);
 	  System.out.println(b.matches("\\+\\d+"));
 	  
 	 ///System.out.println(list.length);

@@ -10,8 +10,19 @@ public class NavigationHelper extends HelperBase {
 
 	public void mainPage() {
 		if (! onMainPage()) {
-		click(By.linkText("home"));
+		driver.get(manager.baseUrl + "addressbookv4.1.4/");
+	//	click(By.linkText("home"));
 		}
+	}
+	
+	public void printPhones() {
+		if (! onPrintPhonesPage()) {
+		click(By.linkText("print phones"));
+		}
+	}
+
+	private boolean onPrintPhonesPage() {
+		return driver.findElements(By.id("view")).size() > 0;
 	}
 
 	private boolean onMainPage() {
