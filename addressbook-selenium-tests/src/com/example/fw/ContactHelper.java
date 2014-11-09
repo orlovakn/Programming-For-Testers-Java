@@ -79,11 +79,7 @@ public class ContactHelper extends HelperBase {
 		}
 		
 		public boolean getComparisonOfContactNumber() {
-			if (getNumberOfContacts() == getNumberOfPrintedPhones())
-				{ 
-					return true;
-				}
-				else return false;
+			return getNumberOfContacts() == getNumberOfPrintedPhones();
 		}
 //------------------------------------------------------------------------------------------------------------------------
 	public ContactHelper initContactCreation() {

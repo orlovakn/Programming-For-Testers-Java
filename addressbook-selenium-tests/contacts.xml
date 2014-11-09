@@ -1,0 +1,32 @@
+<list>
+  <contact>
+    <firstname>test-1520869259</firstname>
+    <lastname></lastname>
+    <address>test-367278856</address>
+    <home>test248733479</home>
+    <mobile></mobile>
+    <work></work>
+    <email></email>
+    <email2>test-1637975524</email2>
+    <bday>22</bday>
+    <bmonth>March</bmonth>
+    <byear>7995</byear>
+    <address2>test817665137</address2>
+    <phone2></phone2>
+  </contact>
+  <contact>
+    <firstname>test673229447</firstname>
+    <lastname>test1197213484</lastname>
+    <address>test-954407988</address>
+    <home>test2143826606</home>
+    <mobile></mobile>
+    <work></work>
+    <email>test2009620714</email>
+    <email2>test-6170110</email2>
+    <bday>20</bday>
+    <bmonth>June</bmonth>
+    <byear>8741</byear>
+    <address2>test1340527177</address2>
+    <phone2>test-698751448</phone2>
+  </contact>
+</list>
