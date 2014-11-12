@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 public class NavigationHelper extends HelperBase {
 
+	
 	public NavigationHelper(ApplicationManager manager) {
 		super(manager);
 	}
@@ -31,7 +32,7 @@ public class NavigationHelper extends HelperBase {
 
 	public void groupsPage() {
 		if(!onGroupsPage()) {
-		click(By.linkText("groups"));
+		    click(By.linkText("groups"));
 		}
 	}
 
