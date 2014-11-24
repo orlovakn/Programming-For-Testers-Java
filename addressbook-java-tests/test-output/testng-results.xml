@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14344" started-at="2014-11-24T19:55:02Z" finished-at="2014-11-24T19:55:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14344" started-at="2014-11-24T19:55:02Z" finished-at="2014-11-24T19:55:17Z">
+      <class name="com.example.tests.TestFolderCreation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.TestFolderCreation@2d6d8735]" name="setUp" is-config="true" duration-ms="10" started-at="2014-11-24T23:55:02Z" finished-at="2014-11-24T23:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFolderCreation()[pri:0, instance:com.example.tests.TestFolderCreation@2d6d8735]" name="testFolderCreation" duration-ms="4419" started-at="2014-11-24T23:55:02Z" finished-at="2014-11-24T23:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFolderCreation -->
+        <test-method status="PASS" signature="testFoldersWithSameNameCreation()[pri:0, instance:com.example.tests.TestFolderCreation@2d6d8735]" name="testFoldersWithSameNameCreation" duration-ms="3513" started-at="2014-11-24T23:55:07Z" finished-at="2014-11-24T23:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFoldersWithSameNameCreation -->
+        <test-method status="PASS" signature="testVariousFoldersCreation()[pri:0, instance:com.example.tests.TestFolderCreation@2d6d8735]" name="testVariousFoldersCreation" duration-ms="6381" started-at="2014-11-24T23:55:10Z" finished-at="2014-11-24T23:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVariousFoldersCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.TestFolderCreation@2d6d8735]" name="tearDown" is-config="true" duration-ms="2" started-at="2014-11-24T23:55:17Z" finished-at="2014-11-24T23:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.TestFolderCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
