@@ -8,7 +8,6 @@ import com.example.utils.SortedListOf;
 
 import static com.example.tests.ContactDataGenerator.loadContactsFromXmlFile;
 import static com.example.tests.ContactDataGenerator.loadContactsFromCsvFile;
-
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -27,14 +26,14 @@ public class ContactCreationTests extends TestBase{
   @Test(dataProvider = "contactsFromFile")
   public void testContactCreationWithValidData(ContactData contact) throws Exception {	
     // save old state
-	SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
-	
+	SortedListOf<ContactData> oldList = new SortedListOf<ContactData>(app.getHibernateHelper().listContacts());
+
 	// actions
 	app.getContactHelper().createContact(contact);
-    
-    //save new state
-	SortedListOf<ContactData> newList = app.getContactHelper().getContacts();	
 
+    //save new state
+	SortedListOf<ContactData> newList = new SortedListOf<ContactData>(app.getModel().getContacts());	
+	
     //compare states	
    assertThat(newList, equalTo(oldList.withAdded(contact))); 
   }

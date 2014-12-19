@@ -32,5 +32,12 @@ public class FolderHelper extends HelperBase {
 		new JButtonOperator(dialog, "OK").push();
 		return waitMessageDialog("Warning", 3000);
 	}
+
+	public void deleteFolder(int index) {
+		//set focus to index folder
+		manager.getMenuHelper().pushDeleteFolder();
+		JDialogOperator dialog = new JDialogOperator(mainFrame);
+		new JButtonOperator(dialog, "Yes").push();
+	}
 	
 }

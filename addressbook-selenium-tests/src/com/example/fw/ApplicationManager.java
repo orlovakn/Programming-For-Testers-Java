@@ -9,32 +9,29 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class ApplicationManager {
 
-	public WebDriver driver;
+	private WebDriver driver;
 	public String baseUrl;
 
 	private NavigationHelper navigationHelper;
 	private GroupHelper groupHelper;
 	private ContactHelper contactHelper;
 	private Properties properties;
+	private HibernateHelper hibernateHelper;
+	private ApplicationModel model;
 	
 	public ApplicationManager(Properties properties) {
 	    this.properties = properties;
-	    String browser = properties.getProperty("browser");   	
-	    if ("firefox".equals(browser)) {
-			driver = new FirefoxDriver();
-	    } else if ("ie".equals(browser)) {
-	        System.setProperty("webdriver.ie.driver", "C:/JavaForTesters/Programming-For-Testers-Java/addressbook-selenium-tests/IEDriverServer.exe");
-	    	driver = new InternetExplorerDriver();
-	    } else {
-	    	throw new Error("Unsupported Browser: " +  browser);
-	    }
-	    baseUrl = properties.getProperty("baseUrl");
-	 // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	    driver.get(baseUrl);
+	    model = new ApplicationModel();
+	    model.setGroups(getHibernateHelper().listGroups());
+	    model.setContacts(getHibernateHelper().listContacts());
 	}
 	
 	public void stop() {
 	    driver.quit();
+	}
+	
+	public ApplicationModel getModel() {
+		return model;
 	}
 	
 	public NavigationHelper navigateTo() {
@@ -57,5 +54,33 @@ public class ApplicationManager {
 		}
 		return groupHelper;
 	}
+
+	public WebDriver getDriver() {
+	    String browser = properties.getProperty("browser");   
+		if (driver == null) {	
+		    if ("firefox".equals(browser)) {
+				driver = new FirefoxDriver();
+		    } else if ("ie".equals(browser)) {
+		        System.setProperty("webdriver.ie.driver", "C:/JavaForTesters/Programming-For-Testers-Java/addressbook-selenium-tests/IEDriverServer.exe");
+		    	driver = new InternetExplorerDriver();
+		    } else {
+		    	throw new Error("Unsupported Browser: " +  browser);
+		    }
+		    baseUrl = properties.getProperty("baseUrl");
+		 // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.get(baseUrl);
+		}
+		return driver;
+	}
+
+	public HibernateHelper getHibernateHelper() {
+		if (hibernateHelper == null) {
+			hibernateHelper = new HibernateHelper(this);
+		}
+		return hibernateHelper;
+	}
 	
+	public String getProperty(String key) {
+		return properties.getProperty(key);
+	}
 }

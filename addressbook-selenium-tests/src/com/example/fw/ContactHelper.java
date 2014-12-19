@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import com.example.tests.ContactData;
 import com.example.utils.SortedListOf;
 
-public class ContactHelper extends HelperBase {
+public class ContactHelper extends WebDriverHelperBase {
 	
 	public static boolean CREATION = true;
 	public static boolean MODIFICATION = false;
@@ -17,7 +17,7 @@ public class ContactHelper extends HelperBase {
 		super(manager);
 	}
 	
-	private SortedListOf<ContactData> cachedContacts; 
+/*	private SortedListOf<ContactData> cachedContacts; 
 
 	public SortedListOf<ContactData> getContacts() {
 	if (cachedContacts == null) {
@@ -35,7 +35,7 @@ public class ContactHelper extends HelperBase {
 			String firstname = row.findElement(By.xpath(".//td[3]")).getText();
 			cachedContacts.add(new ContactData().withLastName(lastname).withFirstName(firstname));
 		}
-	}
+	}*/
 	
 	public ContactHelper createContact(ContactData contact) {
 		manager.navigateTo().mainPage();
@@ -43,6 +43,8 @@ public class ContactHelper extends HelperBase {
 	    fillContactForm(contact, CREATION);
 	    submitContactCreation();
 	    returnToHomePage();
+	    //update model
+	    manager.getModel().addContact(contact);
 	    return this;
 	}
 	
@@ -50,7 +52,7 @@ public class ContactHelper extends HelperBase {
 		 selectContactByRowColumn(row, column);
 		 submitContactDeletion();
 		 returnToHomePage();
-		 cachedContacts = null;
+		 manager.getModel().removeContact(row-2);
 		 return this;
 	}
 	
@@ -59,6 +61,7 @@ public class ContactHelper extends HelperBase {
 		fillContactForm(contact, MODIFICATION);
 		submitContactModification();
 		returnToHomePage();
+		manager.getModel().removeContact(i-2).addContact(contact);
 		return this;
 	}
 	
@@ -113,7 +116,6 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper submitContactCreation() {
 	  click(By.name("submit"));
-	  cachedContacts = null;
 	  return this;
 	}
 
@@ -133,7 +135,6 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper submitContactModification() {
 	  click(By.xpath("//input[@name='update'][@value='Update']"));
-	  cachedContacts = null;
 	  return this;
 	}
 	

@@ -1,24 +1,22 @@
 package com.example.tests;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import com.example.fw.ApplicationManager;
+import com.example.fw.JdbcHelper;
+
 public class Sample {
 	
-  public static void main(String[] args) {
-	  String line = ",,,!";
-	  System.out.println(line.split(",").length); 
-	  
+  public static void main(String[] args) throws FileNotFoundException, IOException {
 	 
-/*	  String a = "tttest";
-	  String b = "       +7 (916) 123-45-67    ";	  
-	  b = b.trim();
-	  System.out.println(b);
-	  String[] list = b.split("\\s+"); 
-	  b = b.replaceAll("[ ()\\-]", "");
-  System.out.println(list);
-	  System.out.println(b.matches("\\+\\d+"));
-	  
-	System.out.println(list.length);
- System.out.println(list[0]);
-   System.out.println(list[1]);
-	  System.out.println(list[2]);*/
-  }
+		Properties properties = new Properties();
+		properties.load(new FileReader(new File("application.properties")));
+		ApplicationManager app = new ApplicationManager(properties);
+	//	JdbcHelper jdbc = new JdbcHelper(app, "jdbc:mysql://localhost/addressbook?user=root&password=");
+		System.out.println(app.getHibernateHelper().listContacts());
+  	}
 }
