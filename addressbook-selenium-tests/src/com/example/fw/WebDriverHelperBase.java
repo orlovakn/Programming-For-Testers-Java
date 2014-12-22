@@ -68,4 +68,13 @@ public abstract class WebDriverHelperBase extends HelperBase {
 		   .selectByVisibleText(text);
 	}
 	}
+	
+	public boolean findElements(By by) {
+	    try {
+	      driver.findElements(by);
+	      return true;
+	    } catch (NoSuchElementException e) {
+	      return false;
+	    }
+	  }
 }

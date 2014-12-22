@@ -31,7 +31,7 @@ public class ContactCreationTests extends TestBase{
 	// actions
 	app.getContactHelper().createContact(contact);
 
-    //save new state
+   //save new state  
 	SortedListOf<ContactData> newList = new SortedListOf<ContactData>(app.getContactHelper().getUIContacts());	
 	
     //compare states	

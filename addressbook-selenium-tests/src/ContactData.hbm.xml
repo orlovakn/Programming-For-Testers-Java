@@ -14,6 +14,16 @@
  <property name="bmonth" column="bmonth" />
  <property name="byear" column="byear" />
  <property name="address2" column="address2" />
- <property name="phone2" column="phone2" />  
+ <property name="phone2" column="phone2" />
+ 
+<set name="com.example.tests.ContactData" table="address_in_groups" inverse="true">
+<key column ="id"/>
+	<many-to-many column = "id" class="com.example.tests.ContactData"/>
+</set>
+<set name="com.example.tests.GroupData" table="group_list" inverse="true">	
+ 	<key column ="group_id"/>
+	<many-to-many column = "group_id" class="com.example.tests.GroupData"/>
+</set>
+<property name="group" column="group_name" />  
  </class>
 </hibernate-mapping>
