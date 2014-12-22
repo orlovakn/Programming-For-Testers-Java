@@ -11,7 +11,7 @@ public class AutoItHelper extends HelperBase {
 	
     private final AutoItX aux;
     static {
-        File jacob = new File("lib/jacob-1.18-M2-x64.dll");
+        File jacob = new File("./lib/jacob-1.18-M2-x64.dll");
         System.setProperty(LibraryLoader.JACOB_DLL_PATH, jacob.getAbsolutePath());
     }
 

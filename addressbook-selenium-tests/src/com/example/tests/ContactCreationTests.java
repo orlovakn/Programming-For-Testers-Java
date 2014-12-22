@@ -32,7 +32,7 @@ public class ContactCreationTests extends TestBase{
 	app.getContactHelper().createContact(contact);
 
     //save new state
-	SortedListOf<ContactData> newList = new SortedListOf<ContactData>(app.getModel().getContacts());	
+	SortedListOf<ContactData> newList = new SortedListOf<ContactData>(app.getContactHelper().getUIContacts());	
 	
     //compare states	
    assertThat(newList, equalTo(oldList.withAdded(contact))); 

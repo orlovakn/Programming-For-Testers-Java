@@ -1,7 +1,7 @@
 package com.example.tests;
 
 import org.testng.annotations.Test;
-
+import org.testng.Assert;
 import com.example.fw.Contact;
 
 public class TestContactCreation extends TestBase {
@@ -15,6 +15,8 @@ public class TestContactCreation extends TestBase {
 	} catch (InterruptedException e) {
 		e.printStackTrace();
 	}
+		Contact createdContact = app.getContactHelper().getFirstContact();
+		Assert.assertEquals(contact, createdContact);
 	}
 
 }

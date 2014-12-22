@@ -16,7 +16,7 @@ public class ProcessHelper extends HelperBase {
   }
   
   public void stopAppUnderTest() {
-	 process.destroy();
+	 //process.destroy();
   }
 
 }

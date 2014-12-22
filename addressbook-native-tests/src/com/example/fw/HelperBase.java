@@ -7,8 +7,5 @@ public class HelperBase {
 	
 	public HelperBase(ApplicationManager applicationManager) {
 		this.manager = applicationManager;
-		
 	}
-
-
 }

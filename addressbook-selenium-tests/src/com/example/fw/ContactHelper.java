@@ -17,16 +17,20 @@ public class ContactHelper extends WebDriverHelperBase {
 		super(manager);
 	}
 	
-/*	private SortedListOf<ContactData> cachedContacts; 
-
-	public SortedListOf<ContactData> getContacts() {
-	if (cachedContacts == null) {
-	 rebuildCache();
-	}
-	return cachedContacts;
+	public SortedListOf<ContactData> getUIContacts() {
+		
+		SortedListOf<ContactData> contacts = new SortedListOf<ContactData>();
+		manager.navigateTo().mainPage();
+		List<WebElement> rows = driver.findElements(By.name("entry"));
+		for (WebElement row : rows) {
+			String lastname = row.findElement(By.xpath(".//td[2]")).getText();
+			String firstname = row.findElement(By.xpath(".//td[3]")).getText();
+			contacts.add(new ContactData().withLastName(lastname).withFirstName(firstname));
+		}
+	return contacts;
 	}
 	
-	private void rebuildCache() {
+/*	private void rebuildCache() {
 		cachedContacts = new SortedListOf<ContactData>(); 
 		manager.navigateTo().mainPage();
 		List<WebElement> rows = driver.findElements(By.name("entry"));
